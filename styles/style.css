@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 80px;
+
+}
+
+.head-list {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+    width: 100%;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1140px;
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.header-block {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    display: block;
+    width: 155px;
+}
+
+.header-list {
+    font-weight: 600;
+    list-style: none;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 20px;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-button-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.menu-button-line:first-child {
+    width: 30px;
+}
+
+.hero-block {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero-bg.png');
+    background-position: center;
+}
+
+.hero-text {
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-subheading {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.hero-heading {
+    font-size: 20vw;
+    font-weight: 600;
+}
+
+.hero-destinations {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-destinations-block {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-destinations-block:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.destination-block-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.destination-block-text h4 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.destination-block-text h5 {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.arrow-down {
+    margin: 0 auto;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    animation: move 2s ease-out infinite;
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+        top: -10px;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h3 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+
+}
+
+.section-heading h2 {
+    font-size: 46px;
+    margin-bottom: 70px;
+}
+
+.activities-blocks {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+}
+
+.activity-block {
+    margin: 10px;
+    width: 200px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+
+.activity-block:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    height: 404px;
+}
+
+.activity-block:first-child {
+    background-image: url('../images/activities-bg1.png');
+    background-position: center;
+}
+
+.activity-block:nth-child(2) {
+    background-image: url('../images/activities-bg2.png');
+}
+
+.activity-block:nth-child(3) {
+    background-image: url('../images/activities-bg3.png');
+}
+
+.activity-block:last-child {
+    background-image: url('../images/activities-bg4.png');
+}
+
+.activity-block__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.activity-numbers {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.about-img {
+    width: 500px;
+    height: 400px;
+    background-image: url('../images/philosophy-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.about-description-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 400px;
+    margin-left: 60px;
+}
+
+.about-text-description {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.about-text-description span {
+    margin-left: -40px;
+    font-size: 20px;
+    color: #9b9b9b;
+}
+
+
+.about-text-description h3 {
+    margin-left: 15px;
+    font-size: 30px;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+
+.about-text-description p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+
+
+
+.location{
+    padding-top: 80px;
+}
+.hotel-blocks{
+     display: flex;
+     justify-content: center;
+}
+
+
+.locations-headings {
+    text-align: center;
+}
+
+.locations-headings h3 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+
+}
+
+.locations-headings h2 {
+    font-size: 46px;
+    margin-bottom: 70px;
+}
+.hotel-image{
+    width: 380px;
+    height: 250px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-size: 380px 240px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+.first-hotel{
+    background-image: url(../images/loc-pic1.png);  
+}
+.second-hotel{
+    background-image: url(../images/loc-pic2.png);
+}
+.third-hotel{
+    background-image: url(../images/loc-pic3.png);
+}
+
+.hotel-headings{
+    color: black;
+    display: inline-block;
+    margin-right: 50px;
+}
+.hotel-star{
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/star.png);
+
+}
+.hotel-norway :nth-child(3){
+   background-image: url(../images/star-gr.png);
+}
+.hotel-bergen :nth-child(3){
+    background-image: url(../images/star-gre.png);
+ }
+.hotel-cost{
+    color: gray;
+    margin-top: 10px;
+}
+.location-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+}
+.date-block {
+  color: black;
+  
+}
+
+.date-block h6{
+    font-weight: normal;
+    font-size: 9px;
+  }
+.border {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border: 1px solid;
+    margin-right: 100px;
+    border-color: gray;
+}
+.search{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+.border-text{
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.authors-section{
+    padding-bottom: 200px;
+}
+.authors-section h3 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.companies img {
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+}
+
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/author.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+}
+
+.author-block {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.author-comment {
+    background-color: white;
+    padding: 40px 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.author-photo img {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.author-description {
+    width: 56px;
+    height: 56px;
+    padding-bottom: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.author-name-position h2 {
+    font-size: 18px;
+    width: 200px;
+
+}
+
+.author-name-position span {
+    font-size: 12px;
+
+}
+
+
+.footer-block {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #f4f4f4;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #3d3d3d;
+    margin: 30px;
+}
+
+.footer-links a:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-divider {
+    margin: 0 auto;
+    background-color: #000;
+    height: 1px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social a img {
+    width: 20%;
+    height: 20%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-list {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+}
